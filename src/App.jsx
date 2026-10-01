@@ -18,9 +18,6 @@ function App() {
     localStorage.setItem("todos", JSON.stringify(todos))
   }, [todos])
 
-  useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(todos))
-  }, [todos])
 
   const handleEdit = (e, id) => {
     let t = todos.filter(i => i.id === id)
